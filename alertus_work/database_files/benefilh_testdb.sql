@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `master_users` (
 --
 
 INSERT INTO `master_users` (`id`, `datecreate`, `firstname`, `surname`, `email`, `password`, `telnum`, `privilege`) VALUES
-(1, 1461529814, 'Jonathan', 'Kartun', 'jontykartun@gmail.com', '', '27828810837', 1);
+(1, 1461529814, 'Jonathan', 'Kartun', 'jontykartun@gmail.com', 'passwordy', '27828810837', 1);
 
 -- --------------------------------------------------------
 
