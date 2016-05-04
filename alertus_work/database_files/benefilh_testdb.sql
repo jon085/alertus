@@ -67,6 +67,34 @@ INSERT INTO `master_users` (`id`, `datecreate`, `firstname`, `surname`, `email`,
 
 -- --------------------------------------------------------
 
+--
+-- Table structure for table `user_loc`
+--
+
+DROP TABLE IF EXISTS `user_loc`;
+CREATE TABLE IF NOT EXISTS `user_loc` (
+  `index` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` bigint(20) NOT NULL,
+  `date` int(11) NOT NULL,
+  `latitude` float NOT NULL,
+  `longitude` float NOT NULL,
+  `hasresponded` tinyint(1) NOT NULL,
+  `hasclosedcase` tinyint(1) NOT NULL,
+  PRIMARY KEY (`index`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `user_loc`
+--
+
+INSERT INTO `user_loc` (`index`, `userid`, `date`, `latitude`, `longitude`, `hasresponded`, `hasclosedcase`) VALUES
+(1, 1, 1462399149, 21.7777, -4.6666, 0, 0),
+(2, 1, 1462399208, 22.7777, -5.6666, 0, 0);
+
+-- --------------------------------------------------------
+
+
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
